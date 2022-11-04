@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:helpers="clr-namespace:MauiApp1.Helpers"
+             x:Class="MauiApp1.MainPage">
+
+ 
+        <Grid>
+
+
+        <Image 
+                Aspect="AspectFit"
+                Source="floorplan_testing.png"     
+                HeightRequest="500"
+                HorizontalOptions="Center"/>
+
+        <Label  x:Name="lightOff"
+                FontFamily="MaterialDesignIcons" 
+                Text="{x:Static helpers:MaterialDesignIconFonts.LightbulbOnOutline}"  
+                FontSize="26"
+                Padding="230,60,50,250"
+                TextColor="Black"
+                IsVisible="true"
+                HorizontalOptions="Center"/>
+
+
+
+
+
+        <Label  x:Name="lightDim1"
+                FontFamily="MaterialDesignIcons" 
+                Text="{x:Static helpers:MaterialDesignIconFonts.LightbulbOn40}"  
+                FontSize="30"
+                Padding="230,60,50,250"
+                TextColor="Gold"
+                IsVisible="false"   
+                HorizontalOptions="Center"/>
+
+        <Label  x:Name="garageClosed"
+                FontFamily="MaterialDesignIcons" 
+                Text="{x:Static helpers:MaterialDesignIconFonts.GarageVariantLock}"  
+                FontSize="30"
+                Padding="650,290,0,250"
+                TextColor="Black"
+                IsVisible="True"   
+                HorizontalOptions="Center"/>
+            
+        <Label  x:Name="garageOpen"
+                FontFamily="MaterialDesignIcons" 
+                Text="{x:Static helpers:MaterialDesignIconFonts.GarageOpenVariant}"  
+                FontSize="30"
+                Padding="650,290,0,250"
+                TextColor="Black"
+                IsVisible="True"   
+                HorizontalOptions="Center"/>
+            
+        <Label  x:Name="frontDoorLock"
+                FontFamily="MaterialDesignIcons" 
+                Text="{x:Static helpers:MaterialDesignIconFonts.DoorSlidingLock}"  
+                FontSize="30"
+                Padding="179,392,0,20"
+                TextColor="Black"
+                IsVisible="True"   
+                HorizontalOptions="Center"/>
+
+        <Button Text="Light Switch"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked" />
+
+        <Button Text="Garage Switch"
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                Clicked="OnGarageButtonClicked" />
+
+    </Grid>
+   
+
+</ContentPage>
