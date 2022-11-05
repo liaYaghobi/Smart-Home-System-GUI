@@ -56,10 +56,15 @@
 	  <None Remove="Resources\Images\floorplan_testing.png" />
 	  <None Remove="Resources\Images\icon_about.png" />
 	  <None Remove="Resources\Images\icon_notes.png" />
+	  <None Remove="Resources\Images\idea.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiFont Include="Resources\Images\floorplan_testing.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Syncfusion.Maui.Sliders" Version="20.3.52" />
 	</ItemGroup>
 
 	<ItemGroup>

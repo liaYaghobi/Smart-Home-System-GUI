@@ -1,4 +1,5 @@
-﻿namespace MauiApp1;
+﻿using Syncfusion.Maui.Core.Hosting;
+namespace MauiApp1;
 
 public static class MauiProgram
 {
@@ -7,6 +8,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+			.ConfigureSyncfusionCore()
 			.ConfigureFonts(fonts =>
 			{
 				

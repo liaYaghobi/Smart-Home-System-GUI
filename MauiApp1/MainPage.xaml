@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:helpers="clr-namespace:MauiApp1.Helpers"
+             xmlns:sliders="clr-namespace:Syncfusion.Maui.Sliders;assembly=Syncfusion.Maui.Sliders"
              x:Class="MauiApp1.MainPage">
 
  
@@ -62,16 +63,77 @@
                 TextColor="Black"
                 IsVisible="True"   
                 HorizontalOptions="Center"/>
+        <StackLayout>
+            <Grid>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="210" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Button 
+                        
+                        Text="Brightness" 
+                        ImageSource="idea.png"   
+                        CornerRadius="20"
+                        BackgroundColor="CadetBlue"  
+                        HeightRequest="115"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                        Grid.Column="0"
+                        Grid.Row="0"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="110" />
+                    </Grid.RowDefinitions>
 
-        <Button Text="Light Switch"
-                VerticalOptions="Start"
-                HorizontalOptions="Center"
-                Clicked="OnButtonClicked" />
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="37" />
+                    </Grid.ColumnDefinitions>
 
-        <Button Text="Garage Switch"
+                    <sliders:SfSlider 
+                        x:Name="sliderVal"
+                        Orientation="Vertical"
+                        Grid.Row="0"
+                        Minimum="0"
+                        Maximum="100"
+                        ValueChanged="OnSliderValueChanged">
+                        
+                        
+                        <sliders:SfSlider.ThumbStyle>
+                            <sliders:SliderThumbStyle 
+                                Radius="5" 
+                                Fill="slateblue" 
+                                />
+                        </sliders:SfSlider.ThumbStyle>
+
+                        <sliders:SfSlider.ThumbOverlayStyle>
+                            <sliders:SliderThumbOverlayStyle Radius="10"/>
+                        </sliders:SfSlider.ThumbOverlayStyle>
+                        
+                    </sliders:SfSlider>
+                </Grid>
+            </Grid>
+            
+            <Button 
+                BackgroundColor="CadetBlue"  
+                HeightRequest="110"
+                CornerRadius="20"
+                Text="Garage Lock"
                 VerticalOptions="Start"
                 HorizontalOptions="Start"
-                Clicked="OnGarageButtonClicked" />
+                 />
+            
+        </StackLayout>
+
+        <Switch IsToggled="true"
+                Toggled="OnGarageButtonClicked"/>
+
+      
+
+
+
 
     </Grid>
    
