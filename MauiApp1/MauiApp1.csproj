@@ -57,6 +57,8 @@
 	  <None Remove="Resources\Images\icon_about.png" />
 	  <None Remove="Resources\Images\icon_notes.png" />
 	  <None Remove="Resources\Images\idea.png" />
+	  <None Remove="Resources\Images\padlock.png" />
+	  <None Remove="Resources\Images\padlock2.png" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -4,7 +4,7 @@
              xmlns:helpers="clr-namespace:MauiApp1.Helpers"
              xmlns:sliders="clr-namespace:Syncfusion.Maui.Sliders;assembly=Syncfusion.Maui.Sliders"
              x:Class="MauiApp1.MainPage">
-
+    
  
         <Grid>
 
@@ -23,10 +23,6 @@
                 TextColor="Black"
                 IsVisible="true"
                 HorizontalOptions="Center"/>
-
-
-
-
 
         <Label  x:Name="lightDim1"
                 FontFamily="MaterialDesignIcons" 
@@ -63,7 +59,8 @@
                 TextColor="Black"
                 IsVisible="True"   
                 HorizontalOptions="Center"/>
-        <StackLayout>
+       
+ <StackLayout>
             <Grid>
                 
                 <Grid.ColumnDefinitions>
@@ -71,6 +68,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
+                    
                 </Grid.RowDefinitions>
                 <Button 
                         
@@ -79,13 +77,16 @@
                         CornerRadius="20"
                         BackgroundColor="CadetBlue"  
                         HeightRequest="115"
-                        VerticalOptions="Start"
-                        HorizontalOptions="Start"
+                       
                         Grid.Column="0"
                         Grid.Row="0"/>
+
+              
+               
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="110" />
+                        
                     </Grid.RowDefinitions>
 
                     <Grid.ColumnDefinitions>
@@ -113,22 +114,61 @@
                         </sliders:SfSlider.ThumbOverlayStyle>
                         
                     </sliders:SfSlider>
+
+                   
                 </Grid>
             </Grid>
-            
-            <Button 
-                BackgroundColor="CadetBlue"  
-                HeightRequest="110"
-                CornerRadius="20"
-                Text="Garage Lock"
-                VerticalOptions="Start"
-                HorizontalOptions="Start"
+     
+     
+     
+     
+     
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="210" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                 
+                </Grid.RowDefinitions>
+              
+
+                <Button 
+                        BackgroundColor="CadetBlue"  
+                    ImageSource="padlock2.png"   
+                        HeightRequest="115"
+                        CornerRadius="20"
+                        Text="Garage Lock"
+                        Grid.Column="0"
+                        Grid.Row="0"
                  />
-            
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="110" />
+
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="287" />
+                    </Grid.ColumnDefinitions>
+
+                  
+
+                    <Switch IsToggled="true"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                Toggled="OnGarageButtonClicked"
+                         Grid.Column="0"
+                        Grid.Row="0"/>
+                </Grid>
+            </Grid>
+
+
         </StackLayout>
 
-        <Switch IsToggled="true"
-                Toggled="OnGarageButtonClicked"/>
+     
 
       
 
