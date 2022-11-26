@@ -1,4 +1,4 @@
-?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:helpers="clr-namespace:MauiApp1.Helpers"
@@ -9,7 +9,7 @@
         <MenuBarItem Text="Add Device">
             <MenuFlyoutSubItem Text="Living Room">
                 <MenuFlyoutItem Text="LightBulb" Clicked="LivingRoomLight"/>
-                <MenuFlyoutItem Text="Speaker" Clicked="LivingRoomSpeaker"/>
+                <MenuFlyoutItem Text="Speaker" />
                 <MenuFlyoutItem Text="TV" />
                 <MenuFlyoutItem Text="Thermostat" />
                 <MenuFlyoutItem Text="Camera" />
@@ -81,7 +81,7 @@
             <Label x:Name ="Label1" Text="LivingRoom" IsVisible="False"  Style="{StaticResource labelRedStyle}"></Label>
         </StackLayout>
 
-        <StackLayout x:Name ="P" Grid.Row="1" Grid.Column="0"></StackLayout>
+        <StackLayout x:Name ="P" Grid.Row="0" Grid.Column="1"></StackLayout>
       
 
 
