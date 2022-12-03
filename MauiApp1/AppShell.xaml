@@ -9,18 +9,18 @@
 
     <TabBar>
 
-        <ShellContent   
-                
-            Title="Home"
-            ContentTemplate="{DataTemplate local:MainPage}" 
-            Route="MainPage" />
+        <ShellContent  Shell.BackgroundColor="CornflowerBlue"  
+                       Shell.TitleColor="DarkBlue"
+                       Title="Home"
+                       ContentTemplate="{DataTemplate local:MainPage}"
+                       Route="MainPage"/>
 
 
-
-        <ShellContent
-            Title="About"
-            ContentTemplate="{DataTemplate local:NewPage1}"
-            Route="NewPage1"/>
+        <ShellContent  Shell.BackgroundColor="CornflowerBlue"
+                       Shell.TitleColor="DarkBlue"
+                       Title="Living Room"
+                       ContentTemplate="{DataTemplate local:LivingRoom}"
+                       Route="LivingRoom"/>
 
 
     </TabBar>
