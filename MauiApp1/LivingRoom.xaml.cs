@@ -3,9 +3,9 @@ using Syncfusion.Maui.Gauges;
 using Syncfusion.Maui.Sliders;
 
 namespace MauiApp1;
-public partial class Kitchen : ContentPage
+public partial class LivingRoom : ContentPage
 {
-    public Kitchen()
+    public LivingRoom()
     {
         InitializeComponent();
     }
@@ -105,7 +105,7 @@ public partial class Kitchen : ContentPage
         GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
         gaugeAnnotation.Content = new Label
         {
-            Text = "72 °F",
+            Text = "72 Â°F",
             TextColor = Colors.Black,                               /* creating thermostat components */
             FontAttributes = FontAttributes.Bold,
             FontSize = 20
